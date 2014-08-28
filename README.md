@@ -8,5 +8,6 @@ with information about me, my work experience, coursework, and blogs. The site w
 on a free, bootstrap-based template by Karma http://www.templatemo.com/preview/templatemo_403_karma
 
 I changed the sections, the navigation bar, and general organization to be personalized
-to my experience.
+to my experience. Also, the template was a bit beefy with a lot of overhead since it builds on
+bootstrap, so I tidied up much of the original code.
 
