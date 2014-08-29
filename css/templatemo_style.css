@@ -107,37 +107,39 @@ section h1 {
 /*------------------------------------------------------
 	NAVIGATION 
 --------------------------------------------------------*/
-nav { font-size: 1.2em; font-weight: lighter; }
-nav .fa { display: block; text-align: center; margin-bottom: 13px; }
+nav { 
+  font-size   : 1.2em; 
+  font-weight : lighter; 
+}
 
 .navbar {
-	background: #303030;
-	border-radius: 0px; 
-	border: none; 
-	margin-bottom: 0px; 
-	-webkit-box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15);
-	-moz-box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15);
-	box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15);
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-ms-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
+	background         : #303030;
+	border-radius      : 0px; 
+	border             : none; 
+	margin-bottom      : 0px; 
+	-webkit-box-shadow : 0 2px 4px rgba(0, 255, 255);
+	-moz-box-shadow    : 0 2px 4px rgba(0, 255, 255);
+	box-shadow         : 0 2px 4px rgba(0, 255, 255);
+	-webkit-transition : all 0.4s ease-in-out;
+	-moz-transition    : all 0.4s ease-in-out;
+	-ms-transition     : all 0.4s ease-in-out;
+	-o-transition      : all 0.4s ease-in-out;
+	transition         : all 0.4s ease-in-out;
 }
 
 .navbar-default .navbar-nav>li>a {
-	padding-bottom: 20px;
-	color: white;
-	text-transform: uppercase;
-	-moz-transition: background-color .5s ease;
-	-o-transition: background-color .5s ease;
-	-webkit-transition: background-color .5s ease;
-	transition: background-color .5s ease;
+	padding-bottom     : 20px;
+	color              : white;
+	text-transform     : uppercase;
+	-moz-transition    : background-color .5s ease;
+	-o-transition      : background-color .5s ease;
+	-webkit-transition : background-color .5s ease;
+	transition         : background-color .5s ease;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .menu ul li a.current {
-	color: white;
-	background-color: #888888;
+  color            : white;
+	background-color : #888888;
 }
 
 .navbar>.container .navbar-brand { margin-left: 0; }
@@ -152,15 +154,29 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 .flexslider { border: none;	-webkit-border-radius: 0; border-radius: 0; }
 .flexslider .slides li { position: relative; }
 .flex-caption {
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    color: white;
-    background-color: #498fc0;
-    z-index:1;
-    padding: 20px;
-    margin: 0;
+  line-height: 26px;
+  font-size: 24px;
+  font-weight: normal;
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: rgba(0,0,0,0.6);
+  padding: 15px;
+  margin: 0;
+  cursor: pointer;
+}
+.slider-link {
+  color: white;
+}
+.slider-link:hover {
+  color: #00FFFF;
+}
+.photo-credits {
+  color: white;
+  font-size: 18px;
+  padding-top: none;
+  cursor: pointer;
 }
 
 /*------------------------------------------------------
@@ -180,6 +196,15 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
 
 #about-content { 
   height: 280px; 
+}
+
+.about-link {
+  color: black;
+  font-weight: 500;
+}
+
+.about-link:hover {
+  color: #00FFFF;
 }
 
 /*------------------------------------------------------
@@ -324,6 +349,7 @@ nav .fa { display: block; text-align: center; margin-bottom: 13px; }
   font-family : 'Avenir', Arial, sans-serif; 
   font-size   : 1.2em;
   padding     : 0; 
+  margin      : 20px 0;
 }
 
 #education p { color: black; padding: 0 4% 4% 4%; margin: 0; font-size: .9em; }
@@ -444,6 +470,8 @@ footer a:hover {
 footer .row { height: 100%; }
 
 #back-to-top { 
+  color       : #FFA930;
+  font-weight : 500; 
   padding-top : 0px; 
   text-align  : center; 
   height      : 21px; 
@@ -678,6 +706,10 @@ footer .row { height: 100%; }
 	        transition: all 0.3s;
 	width: 3.6rem;
 	z-index: 10;
+}
+
+.icon-button .fa-group {
+  width: 4.3rem;
 }
 
 .icon-button:hover .fa-linkedin {
